@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText inputEditText;
     private Button countButton;
     private TextView outputTextView;
+    private WordCounter wordCounter;
 
 
     @Override
@@ -31,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         String input = inputEditText.getText().toString();
         Log.d(getClass().toString(), "The input was: " + input);
 
-        int output = new WordCounter(input).countWords();
-        Log.d(getClass().toString(), "The output was: " + output);
+        wordCounter = new WordCounter(input);
+        int output = wordCounter.countWords();
+        outputTextView.setText(Integer.toString(output));
 
-        outputTextView.setText(output);
     }
 
 

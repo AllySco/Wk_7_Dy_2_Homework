@@ -24,4 +24,5 @@ public class WordCounter {
         int words = inputArray.length;
         return words;
     }
+
 }
