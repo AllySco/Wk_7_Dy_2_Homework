@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Counter</string>
+    <string name="label_name">Word Count</string>
+    <string name="input_hint">Type a sentence to get the word count...</string>
+    <string name="button_text">Annnnnnnd Count</string>
+    <string name="output_text">Word Count Is...</string>
+</resources>
